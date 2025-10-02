@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Residem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="img/icon-removebg-preview (1).png">
+</head>
+
+<body>
+
+    <!-- section-one -->
+
+    <div class="container-fluid section-one px-0">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="img/apt-1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item " data-bs-interval="4000">
+                    <img src="img/apt-2.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev my-auto" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next my-auto" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <nav class="navbar navbar-expand-lg nav-data fixed-top" data-bs-theme='dark'>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start offcanvas-data" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="mono-nav-img"
+                                src="img/logo.webp" alt=""></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav pe-3">
+
+                            <li class="nav-item dropdown">
+                                <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                </a>
+
+                                <div style="background-color:#e8e8e8;" class=" row dropdown-menu">
+                                    <div style="padding: 20px 10px;" class="w-100 dropdown-menu-one">
+                                        <div class="drop-data">
+                                            <img src="img/homepage-1.webp" alt="">
+                                            <p class="text-center">Single Property 1</p>
+                                        </div>
+                                        <div class="drop-data">
+                                            <img src="img/homepage-2.webp" alt="">
+                                            <p class="text-center">Single Property 2</p>
+                                        </div>
+                                        <div class="drop-data">
+                                            <img src="img/homepage-3.webp" alt="">
+                                            <p class="text-center">Apartment 1</p>
+                                        </div>
+                                        <div class="drop-data">
+                                            <img src="img/homepage-4.webp" alt="">
+                                            <p class="text-center">Apartment 2</p>
+                                        </div>
+                                        <div class="drop-data">
+                                            <img src="img/homepage-5.webp" alt="">
+                                            <p class="text-center">Single Apartment</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Rooms
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Rooms 2 Cols</a></li>
+                                    <li><a class="dropdown-item" href="#">Rooms 2 Cols Fluid</a></li>
+                                    <li><a class="dropdown-item" href="#">Rooms 3 Cols</a></li>
+                                    <li><a class="dropdown-item" href="#">Rooms 3 Cols Fluid</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a style="color: white;" class="nav-link" href="#">Facilities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: white;" class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: white;" class="nav-link" href="#">News</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <a class="navbar-brand me-lg-auto" href="#"><img src="img/logo.webp" alt=""></a>
+                <button class="nav-but"><span>SCHEDULE A VISIT</span></button>
+            </div>
+        </nav>
+
+        <div class="data">
+            <h1>Sunvale Residences</h1>
+            <div class="sec-one-data">
+                <p class="my-0">320 40th Street B4, New York, NY 10019</p>
+                <button class="slider-btn"><span>VIEW ON MAP</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-two -->
+
+    <div class="container-fluid section-two m-lg-0 mb-sm-5">
+        <div class="container">
+            <div class="row section-two-data">
+                <div class="col-lg-6 sec-two-left" data-aos="fade-right">
+                    <div class="sec-two-left-top">
+                        <p class="my-0">Home Overview</p>
+                    </div>
+                    <h1>Luxury living where comfort meets timeless style, effortlessly</h1>
+                    <p>Eu eiusmod ut ut dolore nulla in incididunt nulla elit ea aute in adipisicing officia ullamco qui
+                        proident non est laboris commodo deserunt magna deserunt voluptate laborum irure cillum dolor
+                        mollit ea cupidatat occaecat.</p>
+                    <button class="sec-two-btn"><span>SCHEDULE VISIT</span></button>
+                </div>
+                <div class="col-lg-6 sec-two-right mt-5 mt-lg-0" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-6 sec-two-right-data">
+                            <img src="img/s2.webp" alt="">
+                            <img src="img/s3.webp" alt="">
+                        </div>
+                        <div class="col-6 sec-two-right-data-one">
+                            <img src="img/s4.webp" alt="">
+                            <img src="img/s5.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section-three -->
+
+    <div class="container-fluid sec-three py-sm-5">
+        <div class="container py-5">
+            <div class="row py-4 sec-three-data">
+                <div class="col-md-6 sec-three-left" data-aos="fade-right">
+                    <div class="sec-three-left-top mb-4">
+                        <p class="my-0">Facilities</p>
+                    </div>
+                    <h1>Amenities<br>Designed for Your<br>Lifestyle</h1>
+                </div>
+                <div class="col-md-6 sec-three-right py-4 py-sm-0" data-aos="fade-up">
+                    <div class="sec-three-rig-one">
+                        <div class="sec-three-rig-one-data">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="my-0">Swimming Pools</p>
+                        </div>
+                        <div class="sec-three-rig-one-data">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="my-0">Fitness Center</p>
+                        </div>
+                        <div class="sec-three-rig-one-data">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="my-0">Rooftop Lounge</p>
+                        </div>
+                        <div class="sec-three-rig-one-data">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="my-0">Community Event Spaces</p>
+                        </div>
+                        <div class="sec-three-rig-one-data">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="my-0">Play Areas</p>
+                        </div>
+
+                    </div>
+                    <div class="sec-three-rig-one">
+                        <div class="sec-three-rig-one-data">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="my-0">Tennis and Sports Courts</p>
+                        </div>
+                        <div class="sec-three-rig-one-data">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="my-0">Restaurant and Café</p>
+                        </div>
+                        <div class="sec-three-rig-one-data">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="my-0">Business Center</p>
+                        </div>
+                        <div class="sec-three-rig-one-data">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="my-0">Sauna and Spa</p>
+                        </div>
+                        <div class="sec-three-rig-one-data">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="my-0">Parking Facilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section-four -->
+
+    <div class="container-fluid section-four" data-aos="fade-up">
+        <div class="dot">
+            <div class="dot-ani"></div>
+        </div>
+
+        <div class="dot-one">
+            <div class="dot-ani-one"></div>
+        </div>
+
+        <div class="dot-two">
+            <div class="dot-ani-two"></div>
+        </div>
+
+        <div class="dot-three">
+            <div class="dot-ani-three"></div>
+        </div>
+    </div>
+
+
+
+    <!-- section-five -->
+
+    <div class="container-fluid section-five py-3">
+        <div class="container">
+            <div class="row section-five-data d-flex justify-content-center" data-aos="fade-up">
+                <div class="sec-five-top mt-5">
+                    <p>Elevated Comfort</p>
+                </div>
+                <h1 class="text-center py-3">Choose a Room</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 sec-five-data-bottom p-3" data-aos="fade-right">
+                    <div class="sec-five-data-bottom-img">
+                        <img src="img/1.jpg" alt="">
+                        <div class="sec-five-data-bottom-img-btn">
+                            <button>VIEW DETAILS</button>
+                            <button>VIEW DETAILS</button>
+                        </div>
+                        <div class="sec-five-data-bottom-img-det px-3">
+                            <h4>The Cozi Studio</h4>
+                            <p class="my-0">Size 37 m<sup>2</sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 sec-five-data-bottom p-3" data-aos="fade-up">
+                    <div class="sec-five-data-bottom-img">
+                        <img src="img/2.jpg" alt="">
+                        <div class="sec-five-data-bottom-img-btn">
+                            <button>VIEW DETAILS</button>
+                            <button>VIEW DETAILS</button>
+                        </div>
+                        <div class="sec-five-data-bottom-img-det px-3">
+                            <h4>The Nook Alcove</h4>
+                            <p class="my-0">Size 37 m<sup>2</sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 sec-five-data-bottom p-3" data-aos="fade-right">
+                    <div class="sec-five-data-bottom-img">
+                        <img src="img/3.jpg" alt="">
+                        <div class="sec-five-data-bottom-img-btn">
+                            <button>VIEW DETAILS</button>
+                            <button>VIEW DETAILS</button>
+                        </div>
+                        <div class="sec-five-data-bottom-img-det px-3">
+                            <h4>The Junior Suite</h4>
+                            <p class="my-0">Size 37 m<sup>2</sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 sec-five-data-bottom p-3" data-aos="fade-up">
+                    <div class="sec-five-data-bottom-img">
+                        <img src="img/4.jpg" alt="">
+                        <div class="sec-five-data-bottom-img-btn">
+                            <button>VIEW DETAILS</button>
+                            <button>VIEW DETAILS</button>
+                        </div>
+                        <div class="sec-five-data-bottom-img-det px-3">
+                            <h4>The Urban Retreat</h4>
+                            <p class="my-0">Size 37 m<sup>2</sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 sec-five-data-bottom p-3" data-aos="fade-right">
+                    <div class="sec-five-data-bottom-img">
+                        <img src="img/5.jpg" alt="">
+                        <div class="sec-five-data-bottom-img-btn">
+                            <button>VIEW DETAILS</button>
+                            <button>VIEW DETAILS</button>
+                        </div>
+                        <div class="sec-five-data-bottom-img-det px-3">
+                            <h4>The Family Haven</h4>
+                            <p class="my-0">Size 37 m<sup>2</sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 sec-five-data-bottom p-3" data-aos="fade-up">
+                    <div class="sec-five-data-bottom-img">
+                        <img src="img/6.jpg" alt="">
+                        <div class="sec-five-data-bottom-img-btn">
+                            <button>VIEW DETAILS</button>
+                            <button>VIEW DETAILS</button>
+                        </div>
+                        <div class="sec-five-data-bottom-img-det px-3">
+                            <h4>The Penthouse Oasis</h4>
+                            <p class="my-0">Size 37 m<sup>2</sup></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-six -->
+
+    <div class="container-fluid section-six">
+        <div class="row section-six-data">
+            <div class="col-sm-6 section-six-data-box order-lg-0 order-1" data-aos="fade-right">
+                <div class="sec-six-left-top mb-4">
+                    <p class="my-0">Facilities</p>
+                </div>
+                <h1>Comfort. Style. Location</h1>
+                <p>Discover modern, light-filled apartments that blend style, comfort, and convenience in every detail.
+                    Choose from cozy studios to spacious three-bedrooms, each designed to suit your lifestyle. Enjoy
+                    exclusive amenities like rooftop lounges and a fitness center, all in a vibrant city location.
+                    Welcome to a community where luxury living meets urban energy.</p>
+            </div>
+            <div class="col-sm-6 sec-six-right order-lg-1 order-0" data-aos="fade-up"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6 sec-six-right-one" data-aos="fade-right"></div>
+            <div class="col-sm-6 section-six-data-box" data-aos="fade-up">
+                <div class="sec-six-left-top mb-4">
+                    <p class="my-0">Facilities</p>
+                </div>
+                <h1>Live. Laugh. Lounge.</h1>
+                <p>Discover modern, light-filled apartments that blend style, comfort, and convenience in every detail.
+                    Choose from cozy studios to spacious three-bedrooms, each designed to suit your lifestyle. Enjoy
+                    exclusive amenities like rooftop lounges and a fitness center, all in a vibrant city location.
+                    Welcome to a community where luxury living meets urban energy.</p>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col-sm-3 sec-six-con py-5" data-aos="fade-right">
+                <h1>25000</h1>
+                <p>Square Areas</p>
+            </div>
+            <div class="col-sm-3 sec-six-con py-5" data-aos="fade-up">
+                <h1>150</h1>
+                <p>Luxurious Unit</p>
+            </div>
+            <div class="col-sm-3 sec-six-con py-5" data-aos="fade-down">
+                <h1>300</h1>
+                <p>Parking Spaces</p>
+            </div>
+            <div class="col-sm-3 sec-six-con py-5" data-aos="fade-down">
+                <h1>20</h1>
+                <p>Public Facilities</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section-seven -->
+
+
+    <div class="container-fluid section-seven px-0" data-aos="fade-up">
+        <div class="section-seven-box">
+            <div onclick="clickone()" class="section-seven-data">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+
+        </div>
+        <div class="video-box">
+            <video autoplay muted loop id="video">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div onclick="cancle()" class="cancle-box">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript start -->
+
+    <script>
+        let data = document.querySelector('.video-box')
+
+        function clickone() {
+            data.style.opacity = "1"
+        }
+
+        function cancle() {
+            data.style.opacity = "0"
+        }
+    </script>
+
+    <!-- javascript end -->
+
+
+
+
+
+    <!-- section-eight -->
+
+    <div class="container-fluid section-eight py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col section-eight-top py-5" data-aos="fade-up">
+                    <div class="section-eight-top-data mb-3">
+                        <p class="my-0">Contact Us</p>
+                    </div>
+                    <h1 class="text-center">Talk to a Sales Agent</h1>
+                </div>
+            </div>
+            <div class="row sec-eig-box-bottom">
+                <div class="col-sm-4 sec-eig-box-bottom-data py-3" data-aos="fade-right">
+                    <div class="sec-eig-box-bottom-data-img">
+                        <img src="img/1 (1).webp" alt="">
+                        <p style="color: #b07e50;" class="my-0 text-center mt-3">Emily Rodriguez</p>
+                        <p class="text-center mt-2">(555) 234-5678</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 sec-eig-box-bottom-data py-3" data-aos="fade-up">
+                    <div class="sec-eig-box-bottom-data-img">
+                        <img src="img/2.webp" alt="">
+                        <p style="color: #b07e50;" class="my-0 text-center mt-3">Michael Chen</p>
+                        <p class="text-center mt-2">(555) 345-6789</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 sec-eig-box-bottom-data py-3" data-aos="fade-up">
+                    <div class="sec-eig-box-bottom-data-img">
+                        <img src="img/3 (1).webp" alt="">
+                        <p style="color: #b07e50;" class="my-0 text-center mt-3">Jessica Patel</p>
+                        <p class="text-center mt-2">(555) 567-8901</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footar -->
+
+    <div class="container-fluid footar pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col footar-box py-3">
+                    <img src="img/logo.webp" alt="">
+                    <p>712 Jefferson Ave, Brooklyn<br>New York 11221</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 footar-data-box py-sm-5 pb-5">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="footar-data-box-det">
+                        <p class="my-0">Call Us</p>
+                        <p class="my-0">Call: +1 123 456 789</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 footar-data-box py-sm-5 pb-5">
+                    <i class="fa-solid fa-clock"></i>
+                    <div class="footar-data-box-det">
+                        <p class="my-0">Opening Hours</p>
+                        <p class="my-0">Mon to Sat 08:00 - 20:00</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 footar-data-box py-sm-5 pb-5">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="footar-data-box-det">
+                        <p class="my-0">Email Us</p>
+                        <p class="my-0">contact@residem.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footar-bottom py-4">
+                <p class="my-0">Copyright 2025 - Residem by Designesia</p>
+                <div class="footar-bottom-logo">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
